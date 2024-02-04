@@ -6,7 +6,7 @@ from socket import *
 
 def main(args):
     port = parse_args(args)
-    asyncio.run(server(('localhost', port)))
+    asyncio.run(server(('0.0.0.0', port)))
 
 
 def parse_args(args):

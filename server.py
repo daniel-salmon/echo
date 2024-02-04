@@ -5,7 +5,7 @@ from socket import *
 
 def main(args):
     port = parse_args(args)
-    server(('localhost', port))
+    server(('0.0.0.0', port))
 
 
 def parse_args(args):
